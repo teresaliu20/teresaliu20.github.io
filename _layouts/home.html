@@ -15,7 +15,7 @@ image: firstpost-cover.png
     {{ author.catchphrase | markdownify }}
   </h1>
   <div class="home-author-about">
-    {{ author.about | markdownify }}
+    <div class="home-author-about-content">{{ author.about | markdownify }}</div>
     {%- if author.image -%}
     <div class="home-author-image-wrapper">
       <img src="{{ site.url }}/{{ site.baseurl }}/images/{{ author.image }}" />

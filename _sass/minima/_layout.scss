@@ -347,13 +347,15 @@ a.anchor {
   margin-bottom: $spacing-unit * 1.5;
   font-weight: 900;
   line-height: 1.2em;
+  background-color: lighten($secondary-accent-color, 32%);
+  padding: 15px 20px 5px 20px;
 }
 
 .home-author-about {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: $spacing-unit;
-  p {
+  .home-author-about-content {
     flex: 1;
   }
 }
