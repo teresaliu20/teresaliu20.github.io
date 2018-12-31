@@ -1,0 +1,74 @@
+<div id="splash" class="splash">
+  <div id="background" class="splash-background">
+    <img src="{{ site.url }}{{ base.url }}/images/background.svg" />
+  </div>
+  <div id="leaves" class="splash-background">
+    <img src="{{ site.url }}{{ base.url }}/images/background-leaves.svg" />
+  </div>
+  <div id="fish" class="splash-background">
+    <img src="{{ site.url }}{{ base.url }}/images/background-fish.svg" />
+  </div>
+	<div class="splash-content">
+    <p class="splash-lg-title">{{ site.data.author.name }}</p>
+    {%- for title in site.data.author.titles -%}
+      <p class="splash-md-title">> {{ title | strip_html }}</p>
+    {%- endfor -%}
+  </div>
+  <a href="{{ site.url }}{{ base.url }}#top""><p class="splash-scroll">Scroll down →</p>
+</div>
+<script>
+window.onload = function () { 
+
+  // Parallax effect on scroll
+  var h = document.documentElement, 
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
+  var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+
+  document.getElementById("splash").style.top = h[st]/2 * -1 + "px";
+
+  window.onscroll = function () { 
+    if (h[st] > document.getElementById("splash").clientHeight / 2) {
+      // Splash screen covers sidebar, fix by setting zindex of sidebar after scroll
+      document.getElementById("sidebar").style.zIndex = 100;
+    }
+    else {
+      document.getElementById("sidebar").style.zIndex = 0;
+    }
+    document.getElementById("splash").style.top = h[st]/2 * -1 + "px";
+  }; 
+
+  // Parallax effect on mousemove 
+  var txOffset = 0,
+    tyOffset = 0,
+    tzOffset = 0,
+    tRotate = 0;
+
+  window.onmousemove = function(event) {
+    if (window.innerWidth > 600) {
+      txOffset = event.clientX / 40;
+      tyOffset = event.clientY / 40;
+
+      document.getElementById("fish").style.transform = "translate3d("
+        + txOffset + "px, "
+        + tyOffset + "px, "
+        + tzOffset +"px) rotate("
+        + tRotate + "deg)";
+
+      document.getElementById("leaves").style.transform = "translate3d("
+        + txOffset/2 + "px, "
+        + tyOffset/2 + "px, "
+        + tzOffset +"px) rotate("
+        + tRotate + "deg)";
+
+      document.getElementById("background").style.transform = "translate3d("
+        + txOffset/4 + "px, "
+        + tyOffset/4 + "px, "
+        + tzOffset +"px) rotate("
+        + tRotate + "deg)";
+    }
+
+  }
+};
+</script>

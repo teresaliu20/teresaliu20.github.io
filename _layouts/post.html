@@ -1,0 +1,52 @@
+---
+layout: default
+comments: true
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  {% if page.image != null %}
+    <div class="post-image-wrapper">
+      <img src="{{ site.url }}/{{ site.baseurl }}/images/posts/{{ page.image }}" />
+    </div>
+  {% endif %}
+  {% if page.image != null %}
+    <header class="post-header-with-image">
+  {%- else -%}
+    <header class="post-header-without-image">
+  {% endif %}
+    <div class="post-category-box">
+      {%- if page.categories -%}
+        {% for category in page.categories %}
+          <h4 class="post-category">#{{ category }}</h4>
+        {% endfor %}
+      {%- endif -%}
+    </div>
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  
+  <!-- Related Posts -->
+
+    <hr />
+    {%- if page.related-posts.size > 0 -%}
+      <h4 class="accent-header">Related Posts</h4>
+      {%- include list-card.html limit=3 list=page.related-posts  image-folder="posts"-%}
+      <hr />
+    {%- endif -%}
+    <a href="/blog/"><h5 class="uppercase light-header">More articles →</h5></a>
+
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+</article>

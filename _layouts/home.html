@@ -1,0 +1,73 @@
+---
+layout: default
+title: home
+image: firstpost-cover.png
+---
+{% assign author = site.data.author %}
+
+<div class="home">
+  <a class="anchor" id="top"></a>
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  
+  <h1 class="home-author-catchphrase">
+    {{ author.catchphrase | markdownify }}
+  </h1>
+  <div class="home-author-about">
+    {{ author.about | markdownify }}
+    {%- if author.image -%}
+    <div class="home-author-image-wrapper">
+      <img src="{{ site.url }}/{{ site.baseurl }}/images/{{ author.image }}" />
+    </div>
+    {%- endif -%}
+  </div>
+  <div class="home-author-skills">
+    <h4 class="accent-header">Skills</h4>
+    <p class="small-font"><span class="bold">Languages:&nbsp;</span> 
+    {%- for skill in author.skills.languages -%}
+      {{ skill | strip_html }}
+    {%- endfor -%}
+    </p>
+    <p class="small-font"><span class="bold">Development:&nbsp;</span> 
+    {%- for skill in author.skills.development -%}
+      {{ skill | strip_html }}
+    {%- endfor -%}
+    </p>
+    <p class="small-font"><span class="bold">Design/UIUX:&nbsp;</span> 
+    {%- for skill in author.skills.design -%}
+      {{ skill | strip_html }}
+    {%- endfor -%}
+    </p>
+  </div>
+  <h4 class="accent-header">Notable Experiences</h4>
+  {%- for experience in author.experiences -%}
+    <div class="home-author-experience">
+      <h3 class="bold">{{ experience.work }} | {{ experience.position }}</h3>
+      {% if experience.link != null %}
+        <p><a href="{{ experience.link.url }}">{{ experience.link.name | default: experience.link.url }}</a></p>
+      {%- endif -%}
+      <h5 class="light-header">{{ experience.date }}</h5>
+    </div>
+  {%- endfor -%}
+  <a href="/resume"><h5 class="uppercase light-header">Details on resume →</h5></a>  
+
+  <!-- Blog Posts Section -->
+
+  <hr />
+  <h4 class="accent-header">Recent Blog Posts</h4>
+  
+  {%- include list-card.html limit=3 list=site.posts  image-folder="posts"-%}
+
+  <a href="/blog/"><h5 class="uppercase light-header">More articles →</h5></a>
+
+  <!-- Projects Section -->
+
+  <hr />
+  <h4 class="accent-header">Projects</h4>
+
+  {%- include list-card.html limit=3 list=site.projects custom-class="project-card-section" image-folder="projects" -%}
+
+  <a href="/projects/"><h5 class="uppercase light-header">More projects →</h5></a>
+  
+</div>

@@ -1,0 +1,24 @@
+
+<header class="site-header {{ include.custom-class }}" role="banner">
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+    {%- if page_paths -%}
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <div class="menu-icon">
+            <img class="menu-icon" src="{{ site.url }}{{ base.url }}/assets/hamburger.svg" />
+          </div>
+        </label>
+
+        <div class="trigger">
+          {% for link in site.data.navigation %}
+            <a class="page-link" href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </nav>
+    {%- endif -%}
+  </div>
+</header>

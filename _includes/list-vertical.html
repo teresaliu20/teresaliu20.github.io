@@ -1,0 +1,33 @@
+
+<ul class="post-list">
+{% assign ordered_posts = include.list | sort: "date" | reverse %}
+{%- for post in ordered_posts -%}
+  {% if forloop.rindex > include.limit %}
+      {% continue %}
+    {%- endif -%}
+  <li class="post-list-post">
+    <div class="post-content">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+      <div class="post-category-box">
+        {%- if post.categories -%}
+          {% for category in post.categories %}
+            <h6 class="post-category">#{{ category }}</h6>
+          {% endfor %}
+        {%- endif -%}
+      </div>
+    </div>
+    {% if post.preview-image != null %}
+        <div class="post-list-image-wrapper">
+          <img src="{{ site.url }}/{{ site.baseurl }}/images/{{ include.image-folder }}/{{ post.preview-image }}" />
+        </div>
+      {% endif %}
+  </li>
+  {%- endfor -%}
+</ul>

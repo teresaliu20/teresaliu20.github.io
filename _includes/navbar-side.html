@@ -1,0 +1,7 @@
+<div id="sidebar" class="sidebar">
+	<hr />
+	{% for link in site.data.navigation %}
+	<a href="{{ link.url }}"><p>{{ link.title }}</p></a>
+	{% endfor %}
+	<a href="{{ site.url }}{{ base.url }}/#splash"><img src="{{ site.url }}{{ base.url }}/images/red-koi.svg" /></a>
+</div>

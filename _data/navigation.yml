@@ -1,0 +1,12 @@
+# Site navigation links
+- title: About
+  url: /#top
+
+- title: Blog
+  url: /blog
+
+- title: Projects
+  url: /projects
+
+- title: Contact
+  url: /contact

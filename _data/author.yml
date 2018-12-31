@@ -1,0 +1,47 @@
+name: Teresa Liu
+email: teresali@usc.edu
+
+catchphrase:
+  I’m a software engineer who likes art, writing, music,
+  just trying to learn how to be a person like everyone else.
+
+about:
+  I'm Teresa. I'm a software engineer studying at the University of Southern
+  California. I'm majoring in Computer Science at
+  USC Viterbi School of Engineering and graduating in May 2020.
+  
+  I stumbled upon computer science only 4 years ago, with the hopes
+  of finding meaning and impactful projects to work on. Throughout the years, I hope
+  I've learned a thing or too about how to succeed in this career
+  and this website is a way for me pass wisdom down and share my story.
+  Read up and reach out about anything!
+
+skills:
+  languages: C++, Java, Python, Javascript, HTML/CSS
+  development: React.js, Redux, Express.js, Node.js, MongoDB, MySQL, LESS/SCSS, AJAX, jQuery, Django, PostgreSQL, ES6, Git, Jekyll
+  design: Adobe Illustrator, Lightroom, Sketch
+
+experiences:
+  - work: Facebook
+    position: Software Engineering Intern
+    date: May 2018 - August 2018
+    link:
+      name: What I Worked On
+      url: https://code.fb.com/connectivity/introducing-facebook-s-new-terrestrial-connectivity-systems-terragraph-and-project-aries/
+  - work: USC Code The Change
+    position: Developer
+    date: September 2017 - Present
+    link:
+      url: https://www.ctcusc.org
+  - work: Spark SC
+    position: President
+    date: January 2018 - December 2018
+    link:
+      url: https://www.sparksc.org
+
+image: teresa.jpg
+
+titles:
+  - Software Engineer
+  - Maker and Designer
+  - _

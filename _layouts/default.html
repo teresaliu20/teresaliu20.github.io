@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {% if layout.title == "home" %}
+      {%- include header.html custom-class="site-header-home" -%}
+      {%- include splash.html -%} 
+        <div class="reveal">
+          {%- include navbar-side.html -%} 
+          <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+              {{ content }}
+            </div>
+          </main>
+        {%- include footer.html -%}
+      </div>
+
+    {% else %}
+
+      {%- include header.html -%}
+      {%- include navbar-side.html -%} 
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+      {%- include footer.html -%}
+    {% endif %}
+
+  </body>
+
+</html>
+  

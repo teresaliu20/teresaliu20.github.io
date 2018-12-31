@@ -1,0 +1,38 @@
+<div class="{{ include.custom-class }} card-section">
+  {% assign ordered_posts = include.list | sort: "date" | reverse %}
+  {%- for post in ordered_posts -%}
+    {% if forloop.rindex > include.limit %}
+      {% continue %}
+    {%- endif -%}
+    <div class="card">
+      {% if post.preview-image != null %}
+        <div class="card-image-wrapper">
+          <img src="{{ site.url }}/{{ site.baseurl }}/images/{{ include.image-folder }}/{{ post.preview-image }}" />
+        </div>
+      {% endif %}
+      <div class="card-content">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <a href="{{ post.url | relative_url }}">
+          <h3>{{ post.title | escape }}</h3>
+        </a>
+        {% if post.preview-image != null %}
+        <p>
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 95 }}
+        </p>
+        {% else %}
+        <p>
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}
+        </p>
+        {% endif %}
+        <div class="post-category-box">
+          {%- if post.categories -%}
+            {% for category in post.categories %}
+              <h5 class="post-category">#{{ category }}</h5>
+            {% endfor %}
+          {%- endif -%}
+        </div>
+      </div>
+  </div>
+  {%- endfor -%}
+</div>

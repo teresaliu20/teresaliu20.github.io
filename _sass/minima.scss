@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$sans-serif-font: "Menlo";
+$code-font: "Menlo";
+
+$base-font-family: "Source Serif Pro", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   18px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+
+$white                        : #fff;
+$black                        : #000;
+
+$background-color                  	: #fff;
+$background-offwhite-color			: #fafafa;
+$light-background-color				: #f4f1ef;
+$dark-background-color				: #0d1614;
+
+$text-color                  	: #131313;
+$brand-color:      #479134 !default;
+$hacker-color					: #64cc64;
+
+$primary-accent-color				: #CD5C3C;
+$secondary-accent-color				: #f3b51b;
+
+
+$border-color                	: #ddd;
+$link-color                  	: #222;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$spacing-unit:     40px !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        1100px !default;
+
+// Post variables
+$post-image-height: 300px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting",
+  "minima/fonts"
+;
