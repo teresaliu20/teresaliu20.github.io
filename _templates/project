@@ -5,4 +5,31 @@ date:   2018-12-24 16:09:47 -0500
 categories: [category1] [category2] ...
 image: [project-name].png
 preview-image: [project-name]-preview.png
- ---
+---
+
+
+Insert a blurb about your project here that will be displayed as an excerpt on previews of this post. <!-- more -->
+
+Feel free to add more information here as a deeper dive about your project.
+
+![image](insert link to image)
+
+**Created when?:**
+
+**Github:** [See the repository](https://github.com/insert-link-here)
+
+**Devpost:** [Read more about our project here](https://devpost.com/insert-link-here-optional)    
+
+## Features
+
+What does your project do?
+
+[insert more images here]
+
+---
+
+## Built With
+- What?
+
+## Contributors
+- Who?

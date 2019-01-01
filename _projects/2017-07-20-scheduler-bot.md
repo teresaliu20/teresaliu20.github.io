@@ -1,7 +1,6 @@
 ---
 layout: project
 title: SchedulerBot, Meetings Made Through Slack
-tags: [projects]
 categories:
   - Bots
   - Google-API
