@@ -12,7 +12,7 @@ about:
 
   I stumbled upon computer science only 4 years ago, with the hopes
   of finding meaning and impactful projects to work on. Throughout the years, I hope
-  I've learned a thing or too about how to succeed in this career
+  I've learned a thing or two about how to succeed in this career
   and this website and blog is a way for me to share my story.
   Read up and reach out about anything!
 
@@ -22,6 +22,15 @@ skills:
   design: Adobe Illustrator, Lightroom, Sketch
 
 experiences:
+  - work: Google
+    position: Incoming Associate Product Manager Intern
+    date: May 2019 - August 2019
+  - work: KPCB Fellow @ Nextdoor
+    position: Software Engineering Intern
+    date: September 2019 - December 2019
+    link:
+      name: Read about KPCB Fellows
+      url: http://fellows.kleinerperkins.com/
   - work: Facebook
     position: Software Engineering Intern
     date: May 2018 - August 2018
@@ -32,7 +41,7 @@ experiences:
     position: Developer
     date: September 2017 - Present
     link:
-      url: https://www.ctcusc.org
+      url: https://www.ctcusc.com/
   - work: Spark SC
     position: President
     date: January 2018 - December 2018
