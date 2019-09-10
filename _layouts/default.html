@@ -29,7 +29,10 @@
       </main>
       {%- include footer.html -%}
     {% endif %}
-
+    
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
   </body>
 
 </html>
