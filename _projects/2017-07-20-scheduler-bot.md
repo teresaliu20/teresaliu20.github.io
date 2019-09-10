@@ -5,6 +5,7 @@ categories:
   - Bots
   - Google-API
 preview-image: scheduler-preview.png
+date:   2017-07-20 16:09:47 -0500
 ---
 
 Scheduler Bot is a Slack bot that plans meetings and reminders for slack teams. <!--more--> Simply start a conversation with our bot, asking to set a reminder or meeting along with a date time and invites, and the bot will create the Google Calendar event for you after asking for confirmation. This bot is meant to make anything from scheduling one-on-one coffee or lunch breaks to reminders for deadlines much easier by efficiently integrating the process into Slack conversations.

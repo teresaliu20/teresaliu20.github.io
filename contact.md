@@ -12,5 +12,5 @@ My email is [teresa.liu@usc.edu](mailto:teresa.liu@usc.edu). Reach out and I'll 
 
 For professional inquiries, I'm constantly seeking meaningful work and learning opportunities.
 If you have an inquiry you'd like to discuss, please
-look over my [resume](/resume/) and reach out through email.
+look over my [resume](https://drive.google.com/file/d/1j2TAFTwIUiXD-NNnPCl0-aru_7ZRN152/view?usp=sharing) and reach out through email.
 

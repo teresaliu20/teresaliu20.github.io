@@ -7,14 +7,18 @@ catchphrase:
 
 about:
   I'm Teresa. I'm studying computer science at the University of Southern
-  California and I will be graduating in May 2020.
+  California and I will be graduating in May 2020. Ever since I set my heart
+  on pursuing tech, I've done my best to learn as much
+  as possible and work with amazing people. I've only known how to code for a 
+  handful of years, but since I've started, I've tried working on as many projects and teams
+  as I could. Looking into the future, I really strive to be working on impactful projects
+  and to be constantly learning and excited about the work I'm doing.
 
 
-  I stumbled upon computer science only 4 years ago, with the hopes
-  of finding meaning and impactful projects to work on. Throughout the years, I hope
-  I've learned a thing or two about how to succeed in this career
-  and this website and blog is a way for me to share my story.
-  Read up and reach out about anything!
+  If you have any questions, anything from getting your feet off the ground with learning
+  computer science to how to start your career in product or engineering, feel free
+  to reach out! I've been in your shoes, and I'm always happy to help :)
+  
 
 skills:
   languages: C++, Java, Python, Javascript, HTML/CSS
@@ -22,15 +26,15 @@ skills:
   design: Adobe Illustrator, Lightroom, Sketch
 
 experiences:
-  - work: Google
-    position: Incoming Associate Product Manager Intern
-    date: May 2019 - August 2019
   - work: KPCB Fellow @ Nextdoor
     position: Software Engineering Intern
     date: September 2019 - December 2019
     link:
-      name: Read about KPCB Fellows
-      url: http://fellows.kleinerperkins.com/
+      name: Welcome 2019 Kleiner Perkins Fellows!
+      url: https://www.kleinerperkins.com/perspectives/welcome-2019-kleiner-perkins-fellows?fbclid=IwAR0W29pG84_2lIHnW8mvlUW8X3arLcyydJnHVn9L1xTK2eWeWDXxOsKSQJQ
+  - work: Google
+    position: Associate Product Manager Intern
+    date: May 2019 - August 2019
   - work: Facebook
     position: Software Engineering Intern
     date: May 2018 - August 2018

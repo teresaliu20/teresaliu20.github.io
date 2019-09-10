@@ -22,7 +22,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.teresaliu.com" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: teresaliu20
 github_username:  teresaliu20
-medium_username:  teresaliu20
+# medium_username:  teresaliu20
+resume_link: https://drive.google.com/file/d/1j2TAFTwIUiXD-NNnPCl0-aru_7ZRN152/view?usp=sharing
 
 disqus:
     shortname: teresaliu-com

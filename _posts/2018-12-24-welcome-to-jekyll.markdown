@@ -15,4 +15,4 @@ I will be finishing up this website and blog around the beginning of January. I 
 
 I plan to write regularly about the field of computer science, career advice, and generally my journey as a software engineer. Stay tuned for my first blog post!
 
-UPDATE: It's definitely been more than a few updates. I will be writing in the future, no worries! Just ping me to bother me about it so I feel bad for not starting my blog :)
+UPDATE: It's definitely been more than a few days. I will be writing in the future, no worries! Just ping me to bother me about it so I feel bad for not starting my blog :)
