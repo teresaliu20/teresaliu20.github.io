@@ -99,10 +99,7 @@ b, strong {
   position: absolute;
   max-width: 90%;
   left: 10%;
-  top: 54%;
-  @include media-query($on-palm) {
-    top: 40%;
-  }
+  bottom: 12vh;
 }
 
 .splash-lg-title {
@@ -132,15 +129,12 @@ b, strong {
 }
 
 .splash-scroll {
-  color: $hacker-color;
-  transform: rotate(90deg);
   position: absolute;
-  left: 6%;
-  bottom: 20%;
-  transform-origin: left top 0;
-  text-transform: uppercase;
+  width: 20px;
+  left: 3%;
+  bottom: 7%;
   @include media-query($on-palm) {
-    font-size: 14px;
+    width: 16px;
   }
 }
 
@@ -198,11 +192,9 @@ b, strong {
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 14px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    background-color: $dark-background-color;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -236,8 +228,11 @@ b, strong {
 
     .page-link {
       display: block;
-      padding: 5px 10px;
+      padding: 8px 10px;
 
+      &:first-child {
+        padding-top: 20px;
+      }
       &:not(:last-child) {
         margin-right: 0;
       }

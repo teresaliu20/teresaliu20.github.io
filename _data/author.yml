@@ -1,31 +1,37 @@
 name: Teresa Liu
-email: teresali@usc.edu
+email: teresa.liu@usc.edu
 
 catchphrase:
-  I’m a software engineer who has a passion for art, music, and writing
-  and I'm a college kid learning to navigate life.
+  I'm a product manager trained as a software engineer who strives to work on meaningful projects.
 
 about:
-  I'm Teresa. I'm studying computer science at the University of Southern
-  California and I will be graduating in May 2020. Ever since I set my heart
-  on pursuing tech, I've done my best to learn as much
-  as possible and work with amazing people. I've only known how to code for a 
-  handful of years, but since I've started, I've tried working on as many projects and teams
-  as I could. Looking into the future, I really strive to be working on impactful projects
-  and to be constantly learning and excited about the work I'm doing.
+  Hey! I'm Teresa. I'm studying computer science at the University of Southern
+  California and I will be graduating in May 2020. Ever since I started pursuing work in the
+  tech industry, I've done my best to learn as much as possible and work with amazing people.
+  I entered college with minimal coding experience, though with the determination to
+  achieve technical expertise quickly, I dove into challenges across a variety of
+  settings, from hackathons, to internships, to working with non-profits, to building full-fledged
+  deployed projects on my own. I've built experience ranging across engineering backend
+  and systems infrastructure to designing and creating frontend projects.
+
+
+  Nowadays, I'm learning and striving to be a great product manager :)
 
 
   If you have any questions, anything from getting your feet off the ground with learning
   computer science to how to start your career in product or engineering, feel free
-  to reach out! I've been in your shoes, and I'm always happy to help :)
+  to reach out! I've been in your shoes, and I'm always happy to help!
   
 
 skills:
-  languages: C++, Java, Python, Javascript, HTML/CSS
-  development: React.js, Redux, Express.js, Node.js, MongoDB, MySQL, LESS/SCSS, AJAX, jQuery, Django, PostgreSQL, ES6, Git, Jekyll
+  languages: C++/C, Python, Java, Javascript, HTML/CSS
+  development: AWS, Next.js, React.js, Redux, Express.js, Node.js, MongoDB, MySQL, LESS/SCSS, AJAX, jQuery, Django, PostgreSQL, ES6, Git, Jekyll
   design: Adobe Illustrator, Lightroom, Sketch
 
 experiences:
+  - work: Lyft
+    position: Incoming Associate Product Manager
+    date: August 2020
   - work: KPCB Fellow @ Nextdoor
     position: Software Engineering Intern
     date: September 2019 - December 2019
@@ -41,20 +47,21 @@ experiences:
     link:
       name: What I Worked On
       url: https://code.fb.com/connectivity/introducing-facebook-s-new-terrestrial-connectivity-systems-terragraph-and-project-aries/
-  - work: USC Code The Change
-    position: Developer
-    date: September 2017 - Present
-    link:
-      url: https://www.ctcusc.com/
   - work: Spark SC
     position: President
     date: January 2018 - December 2018
     link:
       url: https://www.sparksc.org
+  - work: USC Code The Change
+    position: Developer
+    date: September 2017 - Present
+    link:
+      url: https://www.ctcusc.com/
 
 image: teresa.jpg
 
 titles:
+  - Product Manager
   - Software Engineer
   - Maker and Designer
   - _

@@ -14,5 +14,9 @@
       <p class="splash-md-title">> {{ title | strip_html }}</p>
     {%- endfor -%}
   </div>
-  <a href="{{ site.url }}{{ base.url }}#top""><p class="splash-scroll">Scroll down →</p>
+  <a href="{{ site.url }}{{ base.url }}#top"">
+    <div class="splash-scroll">
+      <img src="{{ site.url }}{{ base.url }}/assets/scroll.svg" />
+    </div>
+  </a>
 </div>
