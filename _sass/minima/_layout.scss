@@ -422,8 +422,13 @@ a.anchor {
   height: 100%;
 }
 
+.blog-card {
+  width: 100%;
+}
+
+
 /**
- * Cards, for displaying previews to posts/projects
+ * Cards, for displaying previews to projects
  */
 .card-section {
   display: flex;
@@ -472,7 +477,41 @@ a.anchor {
 }
 
 /**
- * Posts
+ * Blog Posts - Works with Medium articles
+ */
+.blog-post-title {
+  @include relative-font-size(2.625);
+  line-height: 1;
+  font-weight: 900;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.blog-post {
+
+  figcaption {
+    font-style: italic;
+    color: $grey-color;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+.blog-post-medium-link {
+  text-decoration: underline;
+  color: $grey-color;
+}
+
+.blog-post-metadata {
+  font-style: italic;
+  color: $grey-color;
+  padding: 15px 0;
+}
+
+
+/**
+ * Posts - Archived to switch to blog-post
  */
 .post-image-wrapper {
   height: $post-image-height;

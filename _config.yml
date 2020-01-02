@@ -38,8 +38,11 @@ plugins:
 
 # Collections
 collections:
+  external_feed:
+    output: true
   projects:
     output: true
+    sort_by: date
 
 # Other
 excerpt_separator: <!--more-->

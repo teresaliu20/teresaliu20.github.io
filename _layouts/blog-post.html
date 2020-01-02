@@ -1,0 +1,16 @@
+---
+layout: default
+comments: true
+---
+<article class="blog-post h-entry">
+  <h1 class="blog-post-title p-name">{{ page.title | escape }}</h1>
+  <div class="blog-post-metadata">
+    <span>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{ page.pub_date | date:date_format }}
+      &middot;&nbsp;
+    </span>
+    <a class="blog-post-medium-link" href="{{ page.medium_url }}">Read on Medium</a>
+  </div>
+  {{ page.feed_content }}
+</article>

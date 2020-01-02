@@ -52,7 +52,7 @@ image: firstpost-cover.png
   {%- endfor -%}
   <a href="https://github.com/teresaliu20/resume/blob/master/official-resume.pdf"><h5 class="uppercase light-header">Details on resume →</h5></a>  
 
-  <!-- Blog Posts Section -->
+  <!-- Blog Posts Section, from local site -->
 <!-- 
   <hr />
   <h4 class="accent-header">Recent Blog Posts</h4>
@@ -61,7 +61,23 @@ image: firstpost-cover.png
 
   <a href="/blog/"><h5 class="uppercase light-header">More articles →</h5></a> -->
 
+
+  <!-- Blog Posts Section, from Medium -->
+
+  <hr />
+  
+  <h4 class="accent-header">Recent Blog Posts</h4>
+  {% for e in site.external_feed %}
+    <a href="{{ site.url }}/external_feed/{{ e.title }}"><div class="blog-card">
+        <h2>{{ e.title }}</h2>
+        <p>{{ e.feed_content |  truncate: 400 }}</p>
+      </div>
+    </a>
+  {% endfor %}
+  <a href="/blog/"><h5 class="uppercase light-header">More posts →</h5></a>
+
   <!-- Projects Section -->
+
 
   <hr />
   <h4 class="accent-header">Projects</h4>
