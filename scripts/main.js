@@ -1,17 +1,17 @@
 window.onload = function () { 
 
-  // Parallax effect on scroll
-  var h = document.documentElement, 
-    b = document.body,
-    st = 'scrollTop',
-    sh = 'scrollHeight';
-  var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+  // // Parallax effect on scroll
+  // var h = document.documentElement, 
+  //   b = document.body,
+  //   st = 'scrollTop',
+  //   sh = 'scrollHeight';
+  // var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 
-  window.onscroll = function () { 
+  // window.onscroll = function () { 
 
-    document.getElementById("splash").style.transform = "translateY(" + h[st]/2 * -1 + "px)";
+  //   document.getElementById("splash").style.transform = "translateY(" + h[st]/2 * -1 + "px)";
 
-  }; 
+  // }; 
 
   // Parallax effect on mousemove 
   var txOffset = 0,

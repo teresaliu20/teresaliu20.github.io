@@ -51,10 +51,6 @@ b, strong {
   z-index: -2;
 }
 
-.reveal {
-  margin-top: 75vh;
-}
-
 /**
  * Splash
  */
@@ -64,7 +60,6 @@ b, strong {
   width: 100vw;
   z-index: 100;
   top: 0px;
-  position: absolute;
   background-color: $dark-background-color;
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.2);
   color: white;
@@ -379,7 +374,7 @@ a.anchor {
  * Page content
  */
 .page-content {
-  padding: ($spacing-unit * 1.6) 0;
+  padding: ($spacing-unit * 1.8) 0;
   flex: 1;
 }
 
